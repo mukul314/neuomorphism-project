@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #004cff;
+    --light-black-color:rgba(0, 0, 0, 0.513);
+    --light-white-color:rgba(255,255,255,0.2);
+}
+
+*:focus{
+    outline: 0;
+}
+
+html {
+    --webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body{
+    display: flex;
+    background-color: var(--primary-color);
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.container{
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .box{
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    color: var(--light-black-color);
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    margin: 30px;
+    position: relative;
+    height: 200px;
+    width: 250px;
+    align-items: center;
+}
+
+.container .box.shadow-1{
+    box-shadow: -10px -10px 10px var(--light-white-color), 15px 15px 15px var(--light-black-color);
+}
+.container .box.shadow-2{
+    box-shadow: -10px -10px 10px var(--light-white-color), 15px 15px 15px var(--light-black-color), -10px -10px 10px var(--light-white-color)inset, 15px 15px 15px var(--light-black-color)inset ;
+}
+.container .box.shadow-3{
+    box-shadow: 4px 4px 5px rgba(255,255,255,0.3), -4px -4px 5px var(--light-black-color), -10px -10px 10px var(--light-white-color)inset, 10px 40px 40px var(--light-black-color) ;
+}
+
+.container .box.shadow-4{
+  border: 10px solid var(--primary-color);
+  box-shadow: -10px -10px 10px var(--light-white-color), 15px 15px 15px var(--light-black-color), -10px -10px 10px var(--light-white-color)inset, 15px 15px 15px var(--light-black-color)inset,15px 15px 15px var(--light-black-color )inset ;
+
+
+}
